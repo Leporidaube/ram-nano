@@ -1,94 +1,166 @@
 layout: {zmk_keyboard: charybdis}
 layers:
-  Base:
-  - Q
-  - W
-  - E
-  - R
-  - T
+  Insert:
+  - P
   - Y
+  - F
+  - G
+  - '&gl'
+  - '&vl'
+  - C
+  - R
+  - L
+  - Z
+  - A
+  - O
+  - E
   - U
   - I
-  - O
-  - P
-  - {t: A, h: LGUI}
-  - {t: S, h: LEFT ALT}
-  - {t: D, h: LCTRL}
-  - {t: F, h: LSHFT}
-  - G
+  - D
   - H
-  - {t: J, h: RSHFT}
-  - {t: K, h: RCTRL}
-  - {t: L, h: RALT}
-  - {t: ;, h: RGUI}
-  - {t: Z, h: Mouse}
-  - X
-  - C
-  - V
-  - B
+  - T
   - N
+  - S
+  - Q
+  - J
+  - K
+  - X
+  - {t: ',', h: Symbols}
+  - {t: ., h: Numpad}
+  - B
   - M
-  - ','
-  - .
-  - {t: /, h: Mouse}
-  - {t: ESC, h: Navigation}
-  - {t: SPACE, h: Symbols}
+  - W
+  - V
+  - LGUI
+  - {t: SPACE, h: LSHIFT}
   - BACK SPACE
-  - TAB
-  - {t: ENTER, h: Numbers}
-  Numbers:
+  - {t: Scroll, h: toggle}
+  - ENTER
+  Scroll:
+  - BRI UP
+  - VOL DN
+  - MUTE
+  - VOL UP
+  - R
+  - '&vl'
+  - COPY
+  - SELECT
+  - PASTE
+  - UNDO
+  - BRI DN
+  - Q
+  - F
+  - S
+  - C
+  - LEFT
+  - DragV
+  - Snipe
+  - DragH
+  - RIGHT
+  - LCTRL
+  - Z
+  - D
+  - T
+  - PRINT SCREEN
+  - PP
+  - L CLK
+  - Mid CLK
+  - R CLK
+  - LGUI
+  - LEFT
+  - {t: PLAY PAUSE, h: LGUI}
+  - RIGHT
+  - {t: Games, h: toggle}
+  - {t: Insert, h: toggle}
+  Vim:
+  - S
+  - '0'
+  - G
+  - $
+  - /
+  - '&il'
+  - Y
+  - V
+  - P
+  - U
+  - B
+  - E
+  - F
+  - W
+  - I
+  - A
+  - H
+  - J
+  - K
+  - L
+  - LCTRL
   - ''
-  - F7
-  - F8
-  - F9
-  - DEV TOOLS
-  - ''
-  - '7'
-  - '8'
-  - '9'
+  - Numpad
   - ''
   - ''
-  - F4
-  - F5
-  - F6
-  - F11
-  - ''
-  - '4'
-  - '5'
-  - '6'
   - ''
   - ''
+  - D
+  - ''
+  - ENTER
+  - LCTRL
+  - LSHFT
+  - LALT
+  - SPACE
+  - {t: Insert, h: toggle}
+  Numpad:
   - F1
   - F2
   - F3
-  - F10
+  - F4
   - ''
+  - '&il'
   - '1'
   - '2'
   - '3'
+  - ^
+  - F5
+  - F6
+  - F7
+  - F8
+  - '-'
+  - +
+  - '4'
+  - '5'
+  - '6'
   - '0'
-  - ''
-  - ''
+  - F9
+  - F10
+  - {t: F11, type: held}
+  - DEV TOOLS
+  - /
+  - X
+  - '7'
+  - '8'
+  - '9'
+  - _
+  - LCTRL
+  - LSHIFT
   - DEL
-  - ''
-  - {type: held}
+  - {t: Scroll, h: toggle}
+  - {t: Insert, h: toggle}
   Symbols:
-  - ''
+  - /
   - '{'
   - '}'
   - '`'
   - ''
-  - ''
-  - '&'
-  - '*'
-  - +
+  - '&il'
+  - '!'
+  - '@'
+  - '#'
   - '~'
   - '|'
   - (
   - )
   - ''''
-  - ''
-  - ''
+  - ;
+  - ':'
   - $
   - '%'
   - ^
@@ -97,89 +169,89 @@ layers:
   - '['
   - ']'
   - '"'
-  - ''
-  - ''
-  - '!'
-  - '@'
-  - '#'
+  - '>'
+  - <
+  - '&'
+  - '*'
+  - '?'
   - _
+  - LEFT
+  - RIGHT
+  - BACK SPACE
+  - {t: Scroll, h: toggle}
+  - {t: Insert, h: toggle}
+  Games:
+  - '`'
+  - '1'
+  - '2'
+  - '3'
+  - R
+  - ESC
   - ''
-  - {type: held}
+  - UP
   - ''
   - ''
-  - '='
-  Navigation:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - TAB
+  - Q
+  - W
+  - E
+  - F
   - ''
   - LEFT
-  - UP
   - DOWN
   - RIGHT
   - ''
-  - ''
-  - RSHFT
-  - RCTRL
-  - RALT
-  - RGUI
-  - HOME
-  - PG UP
-  - PG DN
-  - END
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {type: held}
-  - ''
-  - ''
-  - ''
-  - ''
-  Mouse:
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - LALT
-  - LCTRL
   - LSHFT
+  - A
+  - S
+  - D
+  - C
   - ''
-  - ''
-  - '&vs_def'
-  - '&vs_impl'
-  - '&vs_refs'
-  - ''
-  - {type: held}
+  - L CLK
   - Snipe
+  - R CLK
   - DragV
-  - DragH
+  - LCTRL
+  - SPACE
+  - /
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: Insert, h: toggle}
+  DragV:
   - {t: ▽, type: trans}
-  - '&mkp MB2'
-  - '&mkp MB1'
-  - '&mkp MB3'
-  - BACK
-  - FWD
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   Snipe:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -198,48 +270,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  DragV:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -271,12 +307,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -289,10 +325,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
 combos:
-- p: [2, 7]
-  k: CAPS WORD
-- p: [1, 8]
-  k: CAPSLOCK
 - p: [23, 24]
   k: {t: BT, h: '1'}
 - p: [25, 26]
