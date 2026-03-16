@@ -21,7 +21,7 @@ layers:
   - T
   - N
   - S
-  - Q
+  - {t: Q, h: LCTRL}
   - J
   - K
   - X
@@ -41,37 +41,73 @@ layers:
   - VOL DN
   - MUTE
   - VOL UP
-  - R
+  - '&gl'
   - '&vl'
   - COPY
   - SELECT
   - PASTE
   - UNDO
   - BRI DN
-  - Q
-  - F
   - S
-  - C
-  - LEFT
-  - DragV
-  - PLAY PAUSE
-  - DragH
-  - RIGHT
-  - LCTRL
-  - Z
-  - D
   - T
+  - R
+  - PIP
+  - F
+  - LEFT
+  - PP
+  - RIGHT
+  - C
+  - LCTRL
+  - {t: Symbols, h: toggle}
+  - {t: Games, h: toggle}
+  - {t: Numpad, h: toggle}
   - PRINT SCREEN
-  - PRINT SCREEN
+  - DragH
   - L CLK
-  - Snipe
+  - DragV
   - R CLK
-  - LGUI
+  - Snipe
   - LEFT
   - {t: PLAY PAUSE, h: LGUI}
   - RIGHT
-  - {t: Games, h: toggle}
+  - {t: Vim, h: toggle}
   - {t: Insert, h: toggle}
+  Workspaces:
+  - M
+  - T
+  - F
+  - D
+  - L
+  - '&vl'
+  - '1'
+  - '2'
+  - '3'
+  - ''
+  - I
+  - Q
+  - U
+  - O
+  - P
+  - ''
+  - '4'
+  - '5'
+  - '6'
+  - '0'
+  - LSHFT
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '7'
+  - '8'
+  - '9'
+  - LGUI
+  - LGUI
+  - LSHFT
+  - LALT
+  - {t: Scroll, h: toggle}
+  - LSHIFT
   Vim:
   - S
   - '0'
@@ -139,7 +175,7 @@ layers:
   - '8'
   - '9'
   - _
-  - LCTRL
+  - LGUI
   - LSHIFT
   - DEL
   - {t: Scroll, h: toggle}
@@ -196,7 +232,7 @@ layers:
   - W
   - E
   - F
-  - ''
+  - VOL UP
   - LEFT
   - DOWN
   - RIGHT
@@ -206,11 +242,11 @@ layers:
   - S
   - D
   - C
-  - ''
+  - VOL DN
   - L CLK
-  - Snipe
-  - R CLK
   - DragV
+  - R CLK
+  - Snipe
   - LCTRL
   - SPACE
   - /
@@ -233,18 +269,18 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -280,9 +316,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -307,14 +343,14 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}

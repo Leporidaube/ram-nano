@@ -72,7 +72,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "esc_to_vim";
             #binding-cells = <0>;
-            bindings = <&kp ESC>, <&to 2>;
+            bindings = <&kp ESC>, <&to 4>;
         };
 
         il: esc_to_insert {
@@ -110,7 +110,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "esc_to_games";
             #binding-cells = <0>;
-            bindings = <&kp ESC>, <&to 5>;
+            bindings = <&kp ESC>, <&to 6>;
         };
     };
 
@@ -153,19 +153,28 @@
 
         Insert {
             bindings = <
-  &kp P  &kp Y  &kp F     &kp G             &gl              &vl            &kp C      &kp R  &kp L  &kp Z
-  &kp A  &kp O  &kp E     &kp U             &kp I            &kp D          &kp H      &kp T  &kp N  &kp S
-  &kp Q  &kp J  &kp K     &kp X             &syt 4 COMMA     &nut 3 PERIOD  &kp B      &kp M  &kp W  &kp V
-                &kp LGUI  &mt LSHIFT SPACE  &kp BACKSPACE    &to 1          &kp ENTER
+  &kp P        &kp Y  &kp F     &kp G             &gl              &vl            &kp C      &kp R  &kp L  &kp Z
+  &kp A        &kp O  &kp E     &kp U             &kp I            &kp D          &kp H      &kp T  &kp N  &kp S
+  &mt LCTRL Q  &kp J  &kp K     &kp X             &syt 5 COMMA     &nut 4 PERIOD  &kp B      &kp M  &kp W  &kp V
+                      &kp LGUI  &mt LSHIFT SPACE  &kp BACKSPACE    &to 1          &kp ENTER
             >;
         };
 
         Scroll {
             bindings = <
-  &kp C_BRI_UP  &kp C_VOL_DN  &kp K_MUTE  &kp C_VOL_UP           &kp R              &vl              &kp K_COPY  &kp K_SELECT      &kp K_PASTE  &kp K_UNDO
-  &kp C_BRI_DN  &kp Q         &kp F       &kp S                  &kp C              &kp LEFT         &mo 6       &kp C_PLAY_PAUSE  &mo 8        &kp RIGHT
-  &kp LCTRL     &kp Z         &kp D       &kp T                  &kp PRINTSCREEN    &kp PRINTSCREEN  &mkp LCLK   &mo 7             &mkp RCLK    &kp LGUI
-                              &kp LEFT    &mt LGUI C_PLAY_PAUSE  &kp RIGHT          &to 5            &to 0
+  &kp C_BRI_UP  &kp C_VOL_DN  &kp K_MUTE  &kp C_VOL_UP           &gl                &vl    &kp K_COPY  &kp K_SELECT  &kp K_PASTE  &kp K_UNDO
+  &kp C_BRI_DN  &kp S         &kp T       &kp R                  &kp C_PIP          &kp F  &kp LEFT    &kp C_PP      &kp RIGHT    &kp C
+  &kp LCTRL     &to 5         &to 6       &to 4                  &kp PRINTSCREEN    &mo 9  &mkp LCLK   &mo 7         &mkp RCLK    &mo 8
+                              &kp LEFT    &mt LGUI C_PLAY_PAUSE  &kp RIGHT          &to 3  &to 0
+            >;
+        };
+
+        Workspaces {
+            bindings = <
+  &kp M      &kp T  &kp F     &kp D      &kp L       &vl    &kp N1      &kp N2  &kp N3  &none
+  &kp I      &kp Q  &kp U     &kp O      &kp P       &none  &kp N4      &kp N5  &kp N6  &kp N0
+  &kp LSHFT  &none  &none     &none      &none       &none  &kp N7      &kp N8  &kp N9  &kp LGUI
+                    &kp LGUI  &kp LSHFT  &kp LALT    &to 1  &kp LSHIFT
             >;
         };
 
@@ -173,17 +182,17 @@
             bindings = <
   &kp S      &kp N0  &kp G      &kp DLLR   &kp FSLH    &il        &kp Y  &kp V  &kp P  &kp U
   &kp B      &kp E   &kp F      &kp W      &kp I       &kp A      &kp H  &kp J  &kp K  &kp L
-  &kp LCTRL  &none   &mo 3      &none      &none       &none      &none  &kp D  &none  &kp ENTER
+  &kp LCTRL  &none   &mo 4      &none      &none       &none      &none  &kp D  &none  &kp ENTER
                      &kp LCTRL  &kp LSHFT  &kp LALT    &kp SPACE  &to 0
             >;
         };
 
         Numpad {
             bindings = <
-  &kp F1  &kp F2   &kp F3     &kp F4      &none        &il       &kp N1  &kp N2  &kp N3  &kp CARET
-  &kp F5  &kp F6   &kp F7     &kp F8      &kp MINUS    &kp PLUS  &kp N4  &kp N5  &kp N6  &kp N0
-  &kp F9  &kp F10  &kp F11    &kp F12     &kp SLASH    &kp X     &kp N7  &kp N8  &kp N9  &kp UNDER
-                   &kp LCTRL  &kp LSHIFT  &kp DEL      &to 1     &to 0
+  &kp F1  &kp F2   &kp F3    &kp F4      &none        &il       &kp N1  &kp N2  &kp N3  &kp CARET
+  &kp F5  &kp F6   &kp F7    &kp F8      &kp MINUS    &kp PLUS  &kp N4  &kp N5  &kp N6  &kp N0
+  &kp F9  &kp F10  &kp F11   &kp F12     &kp SLASH    &kp X     &kp N7  &kp N8  &kp N9  &kp UNDER
+                   &kp LGUI  &kp LSHIFT  &kp DEL      &to 1     &to 0
             >;
         };
 
@@ -198,10 +207,10 @@
 
         Games {
             bindings = <
-  &kp GRAVE  &kp N1  &kp N2     &kp N3     &kp R       &kp ESC  &none      &kp UP    &none      &none
-  &kp TAB    &kp Q   &kp W      &kp E      &kp F       &none    &kp LEFT   &kp DOWN  &kp RIGHT  &none
-  &kp LSHFT  &kp A   &kp S      &kp D      &kp C       &none    &mkp LCLK  &mo 7     &mkp RCLK  &mo 6
-                     &kp LCTRL  &kp SPACE  &kp FSLH    &none    &to 0
+  &kp GRAVE  &kp N1  &kp N2     &kp N3     &kp R       &kp ESC       &none      &kp UP    &none      &none
+  &kp TAB    &kp Q   &kp W      &kp E      &kp F       &kp C_VOL_UP  &kp LEFT   &kp DOWN  &kp RIGHT  &none
+  &kp LSHFT  &kp A   &kp S      &kp D      &kp C       &kp C_VOL_DN  &mkp LCLK  &mo 7     &mkp RCLK  &mo 8
+                     &kp LCTRL  &kp SPACE  &kp FSLH    &none         &to 0
             >;
         };
 
