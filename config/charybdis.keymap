@@ -162,10 +162,10 @@
 
         Scroll {
             bindings = <
-  &kp C_BRI_UP  &kp C_VOL_DN  &kp K_MUTE  &kp C_VOL_UP           &kp R              &vl       &kp K_COPY  &kp K_SELECT  &kp K_PASTE  &kp K_UNDO
-  &kp C_BRI_DN  &kp Q         &kp F       &kp S                  &kp C              &kp LEFT  &mo 6       &mo 7         &mo 8        &kp RIGHT
-  &kp LCTRL     &kp Z         &kp D       &kp T                  &kp PRINTSCREEN    &kp C_PP  &mkp LCLK   &mkp MCLK     &mkp RCLK    &kp LGUI
-                              &kp LEFT    &mt LGUI C_PLAY_PAUSE  &kp RIGHT          &to 5     &to 0
+  &kp C_BRI_UP  &kp C_VOL_DN  &kp K_MUTE  &kp C_VOL_UP           &kp R              &vl              &kp K_COPY  &kp K_SELECT      &kp K_PASTE  &kp K_UNDO
+  &kp C_BRI_DN  &kp Q         &kp F       &kp S                  &kp C              &kp LEFT         &mo 6       &kp C_PLAY_PAUSE  &mo 8        &kp RIGHT
+  &kp LCTRL     &kp Z         &kp D       &kp T                  &kp PRINTSCREEN    &kp PRINTSCREEN  &mkp LCLK   &mo 7             &mkp RCLK    &kp LGUI
+                              &kp LEFT    &mt LGUI C_PLAY_PAUSE  &kp RIGHT          &to 5            &to 0
             >;
         };
 

@@ -54,7 +54,7 @@ layers:
   - C
   - LEFT
   - DragV
-  - Snipe
+  - PLAY PAUSE
   - DragH
   - RIGHT
   - LCTRL
@@ -62,9 +62,9 @@ layers:
   - D
   - T
   - PRINT SCREEN
-  - PP
+  - PRINT SCREEN
   - L CLK
-  - Mid CLK
+  - Snipe
   - R CLK
   - LGUI
   - LEFT
@@ -270,17 +270,17 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
