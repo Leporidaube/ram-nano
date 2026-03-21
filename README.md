@@ -2,32 +2,18 @@
 
 ## Intro
 
-This repository offers pre-configured ZMK firmware designed for Wireless Charybdis keyboards, supporting both the ubiquitous QWERTY layout and the optimized Colemak DH layout. You can choose from two configurations:
+I originally forked this repository to see if I could get it to build as a way to replace the vendor firmware for a Charybdis 3x5 I got off of AliExpress. After pinning it to an older version of ZMK, it worked. You can fork this repository, paste the contents of the [QWERTY keymaps file](https://github.com/dzhukovsky/charybdis-wireless-nano-zmk-firmware/blob/main/config/charybdis.keymap) into your own fork's Charybdis.keymap, then enable and run the actions workflow for ZMK firmware.
 
-- Bluetooth and USB
-- Dongle
+To enable the workflow to build the Dongle firmware, uncomment the respective section in [this file](https://github.com/dzhukovsky/charybdis-wireless-nano-zmk-firmware/blob/main/build.yaml) in your own fork. Otherwise, the workflow builds the Bluetooth firmware. 
+
+If for whatever reason you wish to build from the repository I forked rather than this one, there should be a pull request with the respective SHA hashes you will need to replace to allow for the firmware to build.
 
 Additionally, this repository automatically generates SVG images of all layers in the keymap, and adds it to the README. It also provides high level instructions and resources on how to customize and build the firmware to meet your specific needs.
 
-Check out the [Charybdis Mini Wireless build guide](https://github.com/280Zo/charybdis-wireless-mini-3x6-build-guide?tab=readme-ov-file) if you haven't yet built your own Charybdis keyboard.
-
-## Usage
-
-If you'd like to use the pre-built firmware the files can be found in the [Actions Workflows](https://github.com/280Zo/charybdis-wireless-mini-zmk-firmware/actions?query=is%3Acompleted+branch%3Amain). To download them, log into Github, click the link, select the latest run that passed on the main branch, and download the applicable firmware. There are five firmware artifacts to choose from. If you're unsure which one to use, you probably want the firmware-charybdis-qwerty build.
-
-- **firmware-charybdis-qwerty** - Bluetooth/USB with QWERTY layout
-- **firmware-charybdis-qwerty-dongle** - Dongle with QWERTY layout
-- **firmware-charybdis-colemak** - Bluetooth/USB with Colemak DH layout
-- **firmware-charybdis-colemak-dongle** - Dongle with Colemak DH layout
+After building, you will end up with three files:
+- **Charybdis_right.uf2** - Flashes the right side
+- **Charybdis_left.uf2** - Flashes the left side
 - **firmware-reset-nanov2** - Reset the firmware completely
-
-There are a few things to note about how the pre-built firmware is configured:
-
-- ZMK has terms for each side of a split keyboard. Central is the half that sends keyboard outputs over USB or advertises to other devices over bluetooth. Peripheral is the half that will only send keystrokes to the central once they are paired and connected through bluetooth. The Bluetooth/USB firmware uses the right side as central.
-- The dongle firmware will have much better battery life for the central side, but requires an extra MCU and can only be connected through the dongle.
-- The Bluetooth/USB firmware can connect through Bluetooth, but the central side will have a shorter battery life because it needs to maintain that connection.
-  - The central side can also be plugged in to USB and the keyboard can be used when Bluetooth on the host computer isn't available (e.g. BIOS navigation)
-- To add support for the PMW3610 low power trackball sensor, badjeff's [zmk-pmw3610-driver](https://github.com/badjeff/zmk-pmw3610-driver), [ZMK Input Behavior Listener](https://github.com/badjeff/zmk-input-behavior-listener?tab=readme-ov-file), and [ZMK Split Peripheral Input Relay](https://github.com/badjeff/zmk-split-peripheral-input-relay) modules are included in the firmware.
 
 ## Flashing the Firmware
 
@@ -47,8 +33,6 @@ Follow the steps below to flash the firmware
 > If the keyboard halves aren't connecting as expected, try pressing the reset button on both halves at the same time. If that doesn't work, follow the [ZMK Connection Issues](https://zmk.dev/docs/troubleshooting/connection-issues#acquiring-a-reset-uf2) documentation for more troubleshooting steps.
 
 ## Keymaps & Layers
-
-The base layer uses [home row mods](https://precondition.github.io/home-row-mods) to make typing as efficient and comfortable as possible. To reduce hand movement, extra attention has also been given to making sure cursor, scrolling, and mouse button operations are as seamless as possible.
 
 Review the layer maps below to see how each one functions. Then either modify the keymap to fit your needs, or start using these defaults to become more familiar with them.
 
